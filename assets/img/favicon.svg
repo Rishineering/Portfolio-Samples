@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#0A0A09"/>
+  <rect x="4.5" y="4.5" width="55" height="55" fill="none" stroke="#C8A87C" stroke-opacity=".55"/>
+  <text x="32" y="45" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="38" fill="#F2EFE7" letter-spacing="1">K</text>
+  <rect x="47" y="12" width="4" height="4" fill="#E33B2B"/>
+</svg>

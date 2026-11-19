@@ -1,0 +1,35 @@
+@font-face{
+  font-family:'Instrument Serif';
+  font-style:italic;
+  font-weight:400;
+  font-display:swap;
+  src:url('../fonts/instrument-serif-italic.var.woff2') format('woff2');
+}
+@font-face{
+  font-family:'Instrument Serif';
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+  src:url('../fonts/instrument-serif-normal.var.woff2') format('woff2');
+}
+@font-face{
+  font-family:'Archivo';
+  font-style:normal;
+  font-weight:400 700;
+  font-display:swap;
+  src:url('../fonts/archivo-normal.var.woff2') format('woff2');
+}
+@font-face{
+  font-family:'IBM Plex Mono';
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+  src:url('../fonts/ibm-plex-mono-normal.var.woff2') format('woff2');
+}
+@font-face{
+  font-family:'IBM Plex Mono';
+  font-style:normal;
+  font-weight:500;
+  font-display:swap;
+  src:url('../fonts/ibm-plex-mono-normal.var.woff2') format('woff2');
+}

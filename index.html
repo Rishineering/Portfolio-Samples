@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="darkroom">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KRONOS ATELIER — Photographic Direction, Lisbon &amp; Milan</title>
+<meta name="description" content="KRONOS ATELIER — Elias Marchetti. Fashion, portrait, commercial, architecture and wedding photography. Stills and motion, made slowly.">
+<meta name="theme-color" content="#0A0A09">
+<meta property="og:title" content="KRONOS ATELIER — Photographic Direction">
+<meta property="og:description" content="Stills and motion, made slowly. Lisbon &amp; Milan.">
+<meta property="og:image" content="./assets/img/hero-main.jpg">
+<link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="./assets/fonts/instrument-serif-normal.var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/archivo-normal.var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/css/fonts.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body data-theme="darkroom">
+
+<a class="skip-link" href="#work">Skip to selected work</a>
+
+<!-- ── atmosphere ─────────────────────────────────────────── -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__ring"></span><span class="cursor__dot"></span><span class="cursor__label"></span></div>
+
+<!-- ── exif telemetry ─────────────────────────────────────── -->
+<div class="exif" id="exif" aria-hidden="true">
+  <span class="exif__dot"></span>
+  <span class="exif__body" id="exifBody">HASSELBLAD X2D · 65MM · f/2.8 · ISO 64 · 1/500</span>
+</div>
+
+<!-- ── loader ─────────────────────────────────────────────── -->
+<div class="loader" id="loader">
+  <div class="loader__stack" id="loaderStack" aria-hidden="true">
+    <img src="./assets/img/loader-1.jpg" alt="">
+    <img src="./assets/img/loader-2.jpg" alt="">
+    <img src="./assets/img/loader-3.jpg" alt="">
+    <img src="./assets/img/loader-4.jpg" alt="">
+    <img src="./assets/img/loader-5.jpg" alt="">
+    <img src="./assets/img/loader-6.jpg" alt="">
+  </div>
+  <div class="loader__core">
+    <div class="loader__row">
+      <span class="loader__brand">KRONOS</span>
+      <span class="loader__num"><span id="loaderNum">000</span><i>/036</i></span>
+    </div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+    <div class="loader__row loader__row--sub">
+      <span>CONTACT SHEET — 2024/2026</span>
+      <span id="loaderStat">DEVELOPING</span>
+    </div>
+  </div>
+  <button class="loader__skip" id="loaderSkip" type="button">SKIP</button>
+</div>
+
+<!-- ── header ─────────────────────────────────────────────── -->
+<header class="hdr" id="hdr">
+  <a class="hdr__brand" href="#top" data-cursor="HOME">
+    <span class="hdr__mark">KRONOS</span>
+    <span class="hdr__sub">ATELIER</span>
+  </a>
+
+  <nav class="hdr__nav" aria-label="Primary">
+    <a href="#work" data-cursor="WORK"><i>[</i>WORK<i>]</i></a>
+    <a href="#studio" data-cursor="STUDIO"><i>[</i>STUDIO<i>]</i></a>
+    <a href="#series" data-cursor="SERIES"><i>[</i>SERIES<i>]</i></a>
+    <a href="#journal" data-cursor="JOURNAL"><i>[</i>JOURNAL<i>]</i></a>
+  </nav>
+
+  <div class="hdr__right">
+    <span class="hdr__clock" id="clock">LISBON 00:00</span>
+    <button class="hdr__theme" id="themeBtn" type="button" aria-label="Switch between darkroom and daylight">
+      <span class="hdr__theme-txt">DAYLIGHT</span>
+    </button>
+    <button class="btn btn--sm" type="button" data-open-drawer>ENQUIRE</button>
+    <button class="hdr__menu" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── mobile menu ────────────────────────────────────────── -->
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__head">
+    <span>KRONOS ATELIER</span>
+    <button class="menu__close" id="menuClose" type="button" aria-label="Close menu">CLOSE</button>
+  </div>
+  <nav class="menu__nav" aria-label="Mobile">
+    <a href="#work" data-cursor="WORK"><em>01</em>Work</a>
+    <a href="#studio" data-cursor="STUDIO"><em>02</em>Studio</a>
+    <a href="#series" data-cursor="SERIES"><em>03</em>Series</a>
+    <a href="#journal" data-cursor="JOURNAL"><em>04</em>Journal</a>
+    <a href="#contact" data-cursor="CONTACT"><em>05</em>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="mailto:studio@kronosatelier.com">studio@kronosatelier.com</a>
+    <span>38°43'N / 9°08'W</span>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero__pin" id="heroPin">
+      <div class="hero__bleed" id="heroBleed">
+        <img src="./assets/img/hero-main.jpg" alt="Editorial fashion portrait in a teal corridor" fetchpriority="high">
+      </div>
+
+      <div class="hero__frame" aria-hidden="true">
+        <span class="hero__tick hero__tick--tl"></span>
+        <span class="hero__tick hero__tick--tr"></span>
+        <span class="hero__tick hero__tick--bl"></span>
+        <span class="hero__tick hero__tick--br"></span>
+        <span class="hero__cross hero__cross--c"></span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__cl"><span class="hero__word hero__word--a">KRO</span></span>
+        <span class="hero__cl"><span class="hero__word hero__word--b">NOS</span></span>
+      </h1>
+
+      <figure class="hero__print hero__print--l" data-exif="LEICA M11 · 50MM · f/1.4 · ISO 200 · 1/250">
+        <img src="./assets/img/hero-left.jpg" alt="Studio portrait lit with magenta and cyan gels">
+      </figure>
+      <figure class="hero__print hero__print--r" data-exif="SONY A1 · 85MM · f/1.8 · ISO 320 · 1/400">
+        <img src="./assets/img/hero-right.jpg" alt="Low-key portrait of a woman in a patterned jacket">
+      </figure>
+      <figure class="hero__print hero__print--m" data-exif="HASSELBLAD X2D · 65MM · f/2.8 · ISO 64 · 1/500">
+        <img src="./assets/img/hero-main.jpg" alt="Full-length fashion frame in a teal corridor" fetchpriority="high">
+        <figcaption>FILM 01 · FRAME 27A</figcaption>
+      </figure>
+
+      <div class="hero__meta hero__meta--tl">
+        <span>PHOTOGRAPHIC DIRECTION</span>
+        <span>STILLS &amp; MOTION</span>
+      </div>
+      <div class="hero__meta hero__meta--tr">
+        <span>EST. 2016</span>
+        <span>LISBON — MILAN</span>
+      </div>
+      <div class="hero__meta hero__meta--bl">
+        <span>38°43'N / 9°08'W</span>
+        <span>AVAILABILITY — Q1 2027</span>
+      </div>
+
+      <p class="hero__tag">
+        <em>Atelier of Elias Marchetti.</em>
+        Fashion, portrait &amp; the quiet commercial work between.
+      </p>
+
+      <div class="hero__scroll">
+        <span class="hero__scroll-line"><i></i></span>
+        <span>SCROLL TO EXPOSE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DISCIPLINE STRIP ─────────────────────────────────── -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip__track" id="stripTrack">
+      <span>FASHION</span><b>✳</b><span>PORTRAIT</span><b>✳</b><span>COMMERCIAL</span><b>✳</b><span>ARCHITECTURE</span><b>✳</b><span>WEDDING</span><b>✳</b><span>EDITORIAL</span><b>✳</b><span>STILLS</span><b>✳</b><span>MOTION</span><b>✳</b>
+    </div>
+  </div>
+
+  <!-- ── MANIFESTO ────────────────────────────────────────── -->
+  <section class="manifesto" id="studio">
+    <div class="manifesto__grid">
+      <p class="eyebrow" data-reveal>01 — THE STUDIO</p>
+
+      <div class="manifesto__body">
+        <p class="manifesto__lead" data-reveal-lines>
+          Most photographs are <em>taken.</em><br>
+          A few are <em>waited for.</em>
+        </p>
+        <p class="manifesto__copy" data-reveal>
+          I work slowly, mostly in natural light, with as little equipment as the
+          day will allow. Fifteen years of weddings, campaigns and covers has
+          taught me the same thing: the frame that lasts is rarely the one that
+          was planned. I would rather come back tomorrow than fake a sunset.
+        </p>
+
+        <div class="manifesto__sig">
+          <span class="manifesto__sigline"></span>
+          <span>Elias Marchetti — Lisbon</span>
+        </div>
+      </div>
+
+      <aside class="manifesto__aside">
+        <figure class="manifesto__figure" data-exif="MAMIYA RZ67 · 110MM · f/2.8 · PORTRA 400 · 1/125">
+          <img src="./assets/img/detail-01.jpg" alt="A 35mm camera body resting on a surface" loading="lazy">
+          <figcaption>KIT — 2016 TO NOW</figcaption>
+        </figure>
+        <dl class="manifesto__stats">
+          <div><dt>COMMISSIONS</dt><dd>212</dd></div>
+          <div><dt>COUNTRIES</dt><dd>19</dd></div>
+          <div><dt>AVG. EDIT</dt><dd>9 days</dd></div>
+        </dl>
+        <p class="manifesto__press">
+          “The rare photographer who edits like an editor and shoots like a
+          guest.” — <em>The Quiet Press</em>, 2025
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ── INDEX / WORK ─────────────────────────────────────── -->
+  <section class="index" id="work">
+    <div class="index__head">
+      <div class="index__headline">
+        <p class="eyebrow" data-reveal>02 — SELECTED WORK</p>
+        <h2 class="index__title" data-reveal>Index <em>2024—2026</em></h2>
+      </div>
+
+      <div class="index__controls">
+        <div class="filters" role="group" aria-label="Filter by discipline" id="filters">
+          <button type="button" class="filter is-on" data-filter="all">ALL <sup id="cntAll">14</sup></button>
+          <button type="button" class="filter" data-filter="fashion">FASHION</button>
+          <button type="button" class="filter" data-filter="portrait">PORTRAIT</button>
+          <button type="button" class="filter" data-filter="commercial">COMMERCIAL</button>
+          <button type="button" class="filter" data-filter="architecture">ARCHITECTURE</button>
+          <button type="button" class="filter" data-filter="wedding">WEDDING</button>
+        </div>
+        <div class="modes" role="group" aria-label="Gallery layout" id="modes">
+          <button type="button" class="mode is-on" data-mode="scatter" data-cursor="SCATTER">SCATTER</button>
+          <button type="button" class="mode" data-mode="strip" data-cursor="FILMSTRIP">FILMSTRIP</button>
+          <button type="button" class="mode" data-mode="archive" data-cursor="ARCHIVE">ARCHIVE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="index__stage" id="stage">
+      <div class="index__track" id="track">
+
+        <figure class="frame" data-file="look-02" data-genre="fashion" data-ar="0.67"
+                data-title="Silk, Salt" data-client="MARE" data-year="2026"
+                data-exif="HASSELBLAD X2D · 80MM · f/2.0 · ISO 100 · 1/320" data-cursor="VIEW">
+          <img src="./assets/img/look-02.jpg" alt="A model in a sheer black top against a warm grey studio wall" loading="lazy">
+          <span class="frame__no">001</span>
+        </figure>
+
+        <figure class="frame" data-file="por-01" data-genre="portrait" data-ar="0.67"
+                data-title="Blue Hour" data-client="PERSONAL" data-year="2025"
+                data-exif="LEICA M11 · 35MM · f/1.4 · ISO 400 · 1/125" data-cursor="VIEW">
+          <img src="./assets/img/por-01.jpg" alt="Street portrait of a woman in a blue hooded coat" loading="lazy">
+          <span class="frame__no">002</span>
+        </figure>
+
+        <figure class="frame" data-file="com-01" data-genre="commercial" data-ar="1.5"
+                data-title="Taycan, Dusk" data-client="VANTAGE" data-year="2026"
+                data-exif="CANON R5 · 50MM · f/2.8 · ISO 200 · 1/640" data-cursor="VIEW">
+          <img src="./assets/img/com-01.jpg" alt="A dark electric car photographed from behind on an empty road" loading="lazy">
+          <span class="frame__no">003</span>
+        </figure>
+
+        <figure class="frame" data-file="arc-01" data-genre="architecture" data-ar="0.78"
+                data-title="Fold" data-client="FORMA" data-year="2025"
+                data-exif="SONY A7R V · 24MM · f/8 · ISO 64 · 1/250" data-cursor="VIEW">
+          <img src="./assets/img/arc-01.jpg" alt="Curving blue glass facade seen from below" loading="lazy">
+          <span class="frame__no">004</span>
+        </figure>
+
+        <figure class="frame" data-file="wed-01" data-genre="wedding" data-ar="0.67"
+                data-title="Quinta da Lua I" data-client="PRIVATE" data-year="2026"
+                data-exif="LEICA M11 · 50MM · f/2.0 · ISO 400 · 1/250" data-cursor="VIEW">
+          <img src="./assets/img/wed-01.jpg" alt="A couple standing in hard palm-leaf shadow" loading="lazy">
+          <span class="frame__no">005</span>
+        </figure>
+
+        <figure class="frame" data-file="look-03" data-genre="fashion" data-ar="0.67"
+                data-title="Milano, Street" data-client="ATELIER NOIR" data-year="2025"
+                data-exif="NIKON Z8 · 85MM · f/1.8 · ISO 200 · 1/800" data-cursor="VIEW">
+          <img src="./assets/img/look-03.jpg" alt="Street style frame in front of Milan cathedral" loading="lazy">
+          <span class="frame__no">006</span>
+        </figure>
+
+        <figure class="frame" data-file="por-02" data-genre="portrait" data-ar="1"
+                data-title="Bougainvillea" data-client="LUMEN" data-year="2026"
+                data-exif="HASSELBLAD X2D · 65MM · f/4 · ISO 64 · 1/500" data-cursor="VIEW">
+          <img src="./assets/img/por-02.jpg" alt="Portrait of a woman with a large afro against pale light" loading="lazy">
+          <span class="frame__no">007</span>
+        </figure>
+
+        <figure class="frame" data-file="com-03" data-genre="commercial" data-ar="1.5"
+                data-title="Rosso" data-client="SEVENFOLD" data-year="2024"
+                data-exif="CANON R5 · 35MM · f/4 · ISO 125 · 1/500" data-cursor="VIEW">
+          <img src="./assets/img/com-03.jpg" alt="Red sports car parked in a white studio" loading="lazy">
+          <span class="frame__no">008</span>
+        </figure>
+
+        <figure class="frame" data-file="arc-03" data-genre="architecture" data-ar="1.5"
+                data-title="Lobby, 6am" data-client="FORMA" data-year="2024"
+                data-exif="SONY A7R V · 24MM · f/5.6 · ISO 200 · 1/60" data-cursor="VIEW">
+          <img src="./assets/img/arc-03.jpg" alt="Empty concrete lobby with a long corridor" loading="lazy">
+          <span class="frame__no">009</span>
+        </figure>
+
+        <figure class="frame" data-file="look-01" data-genre="fashion" data-ar="1.5"
+                data-title="Golden" data-client="MARE" data-year="2026"
+                data-exif="HASSELBLAD X2D · 90MM · f/2.5 · ISO 100 · 1/1000" data-cursor="VIEW">
+          <img src="./assets/img/look-01.jpg" alt="A woman in a hat against a saturated yellow backdrop" loading="lazy">
+          <span class="frame__no">010</span>
+        </figure>
+
+        <figure class="frame" data-file="por-04" data-genre="portrait" data-ar="0.67"
+                data-title="Elias" data-client="PERSONAL" data-year="2024"
+                data-exif="LEICA M11 · 75MM · f/2.0 · ISO 500 · 1/180" data-cursor="VIEW">
+          <img src="./assets/img/por-04.jpg" alt="Low-key portrait of a man in a textured knit" loading="lazy">
+          <span class="frame__no">011</span>
+        </figure>
+
+        <figure class="frame" data-file="wed-06" data-genre="wedding" data-ar="0.67"
+                data-title="Quinta da Lua II" data-client="PRIVATE" data-year="2026"
+                data-exif="LEICA M11 · 35MM · f/1.6 · ISO 320 · 1/200" data-cursor="VIEW">
+          <img src="./assets/img/wed-06.jpg" alt="Bride and groom in a low-lit room" loading="lazy">
+          <span class="frame__no">012</span>
+        </figure>
+
+        <figure class="frame" data-file="look-05" data-genre="fashion" data-ar="1.5"
+                data-title="Petals" data-client="ONDA" data-year="2025"
+                data-exif="NIKON Z8 · 50MM · f/2.8 · ISO 160 · 1/400" data-cursor="VIEW">
+          <img src="./assets/img/look-05.jpg" alt="Portrait with a crown of roses against a yellow wall" loading="lazy">
+          <span class="frame__no">013</span>
+        </figure>
+
+        <figure class="frame" data-file="por-05" data-genre="portrait" data-ar="0.8"
+                data-title="Softbox" data-client="HALO" data-year="2025"
+                data-exif="CANON R5 · 85MM · f/1.6 · ISO 100 · 1/160" data-cursor="VIEW">
+          <img src="./assets/img/por-05.jpg" alt="Beauty portrait on a pale pink backdrop" loading="lazy">
+          <span class="frame__no">014</span>
+        </figure>
+
+      </div>
+
+      <div class="archive" id="archive" aria-hidden="true">
+        <div class="archive__head">
+          <span>TITLE</span><span>CLIENT</span><span>DISCIPLINE</span><span>YEAR</span>
+        </div>
+        <div class="archive__rows" id="archiveRows"></div>
+      </div>
+
+      <div class="sprocket sprocket--top" aria-hidden="true"></div>
+      <div class="sprocket sprocket--bot" aria-hidden="true"></div>
+    </div>
+
+    <div class="index__foot">
+      <span id="indexHint">CLICK A FRAME TO OPEN · HOVER FOR CAPTURE DATA</span>
+      <span class="index__count" id="indexCount">14 FRAMES</span>
+    </div>
+  </section>
+
+  <!-- ── SERIES / CASE STUDY ──────────────────────────────── -->
+  <section class="series" id="series">
+    <div class="series__head">
+      <p class="eyebrow" data-reveal>03 — SERIES</p>
+      <h2 class="series__title" data-reveal>Quinta da <em>Lua</em></h2>
+      <div class="series__meta">
+        <span>AISLING &amp; RUARI</span>
+        <span>ALGARVE, PT</span>
+        <span>SEPT 2026</span>
+      </div>
+    </div>
+
+    <div class="series__body">
+      <div class="series__sticky">
+        <div class="series__sticky-inner">
+          <p>
+            They asked for sixty photographs. We made four hundred and kept nine.
+            The rest were the same moment, arrived at from different directions.
+          </p>
+          <p class="series__small">
+            Two days, one family, no shot list. Started at the table, ended at
+            four in the morning when the last cousin finally sat down.
+          </p>
+          <dl class="series__specs">
+            <div><dt>ROLE</dt><dd>Photography &amp; edit</dd></div>
+            <div><dt>FORMAT</dt><dd>Digital · 35mm &amp; 50mm</dd></div>
+            <div><dt>LIGHT</dt><dd>Available, one bounce</dd></div>
+            <div><dt>DELIVERY</dt><dd>9 days, 604 files</dd></div>
+          </dl>
+          <button class="linkbtn" type="button" data-open-lightbox="wed-05" data-cursor="OPEN">
+            <span>VIEW THE FULL SERIES</span><i>→</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="series__flow">
+        <figure class="sf sf--a" data-exif="LEICA M11 · 35MM · f/1.6 · ISO 320 · 1/200" data-cursor="VIEW">
+          <img src="./assets/img/wed-05.jpg" alt="Couple standing in striped palm shadow" loading="lazy">
+        </figure>
+        <figure class="sf sf--b" data-exif="LEICA M11 · 50MM · f/2.0 · ISO 160 · 1/500" data-cursor="VIEW">
+          <img src="./assets/img/wed-02.jpg" alt="Bridal bouquet photographed against deep shadow" loading="lazy">
+        </figure>
+        <figure class="sf sf--c" data-exif="LEICA M11 · 50MM · f/2.8 · ISO 200 · 1/250" data-cursor="VIEW">
+          <img src="./assets/img/wed-03.jpg" alt="Hands with wedding rings on light fabric" loading="lazy">
+        </figure>
+        <figure class="sf sf--d" data-exif="LEICA M11 · 35MM · f/4 · ISO 100 · 1/800" data-cursor="VIEW">
+          <img src="./assets/img/wed-04.jpg" alt="A long table set for dinner outdoors" loading="lazy">
+        </figure>
+        <figure class="sf sf--e" data-exif="LEICA M11 · 35MM · f/1.6 · ISO 320 · 1/200" data-cursor="VIEW">
+          <img src="./assets/img/wed-01.jpg" alt="Couple in hard palm-leaf shadow" loading="lazy">
+        </figure>
+        <figure class="sf sf--f" data-exif="LEICA M11 · 50MM · f/2.0 · ISO 400 · 1/125" data-cursor="VIEW">
+          <img src="./assets/img/wed-06.jpg" alt="Quiet moment between the couple" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DARKROOM / GRADE ─────────────────────────────────── -->
+  <section class="darkroom" id="darkroom">
+    <div class="darkroom__glow" aria-hidden="true"></div>
+    <div class="darkroom__head">
+      <p class="eyebrow" data-reveal>04 — THE GRADE</p>
+      <h2 class="darkroom__title" data-reveal>Half the photograph<br>happens <em>after</em> the shutter.</h2>
+    </div>
+
+    <div class="grade" id="grade">
+      <div class="grade__frame" data-exif="HASSELBLAD X2D · 80MM · f/2.8 · ISO 200 · 1/250">
+        <img class="grade__img grade__img--graded" src="./assets/img/por-02.jpg" alt="Portrait with a graded, warm treatment">
+        <div class="grade__raw" id="gradeRaw">
+          <img class="grade__img" src="./assets/img/por-02.jpg" alt="">
+        </div>
+        <div class="grade__handle" id="gradeHandle" role="slider" tabindex="0"
+             aria-label="Compare raw and graded image" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <span class="grade__grip"><i></i></span>
+        </div>
+        <span class="grade__tag grade__tag--l">RAW — SENSOR</span>
+        <span class="grade__tag grade__tag--r">GRADE 03 — KRONOS</span>
+      </div>
+      <div class="grade__side">
+        <p>
+          Every frame leaves here with a grade built by hand — not a preset, not
+          an action. Drag the divider to see what the sensor gave us, and what
+          the print decided to say.
+        </p>
+        <ul class="grade__list">
+          <li><span>PROFILE</span><span>KRONOS 03 / FILM EMUL</span></li>
+          <li><span>HIGHLIGHTS</span><span>−0.4 EV</span></li>
+          <li><span>SHADOWS</span><span>+18, LIFTED</span></li>
+          <li><span>GRAIN</span><span>25% · 400 ISO</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── REEL ─────────────────────────────────────────────── -->
+  <section class="reel" id="reel">
+    <div class="reel__head">
+      <p class="eyebrow" data-reveal>05 — IN MOTION</p>
+      <h2 class="reel__title" data-reveal>Stills that <em>breathe.</em></h2>
+      <p class="reel__note" data-reveal>Short films and cinemagraphs for clients who can’t sit still.</p>
+    </div>
+
+    <div class="reel__grid">
+      <a class="reel-card" href="#reel" data-open-lightbox="look-01" data-cursor="PLAY">
+        <div class="reel-card__media">
+          <img src="./assets/img/look-01.jpg" alt="Fashion still, yellow backdrop" loading="lazy">
+          <img class="reel-card__alt" src="./assets/img/look-05.jpg" alt="" loading="lazy">
+          <span class="reel-card__tc">00:12</span>
+          <span class="reel-card__rec">● REC</span>
+        </div>
+        <div class="reel-card__foot">
+          <span>COMO UMA ONDA</span><span>FASHION FILM · 2026</span>
+        </div>
+      </a>
+
+      <a class="reel-card" href="#reel" data-open-lightbox="com-02" data-cursor="PLAY">
+        <div class="reel-card__media">
+          <img src="./assets/img/com-02.jpg" alt="A dark car in a garage" loading="lazy">
+          <img class="reel-card__alt" src="./assets/img/com-04.jpg" alt="" loading="lazy">
+          <span class="reel-card__tc">00:24</span>
+          <span class="reel-card__rec">● REC</span>
+        </div>
+        <div class="reel-card__foot">
+          <span>NOCTURNE</span><span>AUTOMOTIVE · 2025</span>
+        </div>
+      </a>
+
+      <a class="reel-card" href="#reel" data-open-lightbox="pla-02" data-cursor="PLAY">
+        <div class="reel-card__media">
+          <img src="./assets/img/pla-02.jpg" alt="Street scene in New York" loading="lazy">
+          <img class="reel-card__alt" src="./assets/img/detail-02.jpg" alt="" loading="lazy">
+          <span class="reel-card__tc">00:38</span>
+          <span class="reel-card__rec">● REC</span>
+        </div>
+        <div class="reel-card__foot">
+          <span>SALT &amp; SMOKE</span><span>DOCUMENTARY · 2024</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── CLIENTS ──────────────────────────────────────────── -->
+  <section class="clients" aria-label="Selected clients">
+    <p class="eyebrow">06 — SELECTED CLIENTS</p>
+    <div class="clients__marquee">
+      <div class="clients__row" id="clientsRowA">
+        <span>MARE</span><i>✳</i><span>ATELIER NOIR</span><i>✳</i><span>CASA VELA</span><i>✳</i><span>ONDA</span><i>✳</i><span>SEVENFOLD</span><i>✳</i><span>LUMARIS</span><i>✳</i>
+      </div>
+      <div class="clients__row clients__row--b" id="clientsRowB">
+        <span>FORMA</span><i>✳</i><span>TERRA NOVA</span><i>✳</i><span>HALO STUDIO</span><i>✳</i><span>VANTAGE</span><i>✳</i><span>SÉPTIMO</span><i>✳</i><span>NOCTURNE</span><i>✳</i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── JOURNAL ──────────────────────────────────────────── -->
+  <section class="journal" id="journal">
+    <div class="journal__head">
+      <p class="eyebrow" data-reveal>07 — JOURNAL</p>
+      <a class="journal__all" href="#journal" data-cursor="ALL">ALL ENTRIES →</a>
+    </div>
+    <ul class="journal__list">
+      <li>
+        <a href="#journal" data-cursor="READ" data-open-lightbox="detail-01">
+          <span class="j__no">041</span>
+          <span class="j__title">Notes on the 85&nbsp;mm</span>
+          <span class="j__tag">CRAFT</span>
+          <span class="j__date">14 OCT 2026</span>
+          <span class="j__thumb"><img src="./assets/img/detail-01.jpg" alt="" loading="lazy"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#journal" data-cursor="READ" data-open-lightbox="pla-01">
+          <span class="j__no">040</span>
+          <span class="j__title">Three days in Trás-os-Montes</span>
+          <span class="j__tag">FIELD</span>
+          <span class="j__date">02 SEP 2026</span>
+          <span class="j__thumb"><img src="./assets/img/pla-01.jpg" alt="" loading="lazy"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#journal" data-cursor="READ" data-open-lightbox="arc-02">
+          <span class="j__no">039</span>
+          <span class="j__title">On shooting film for a client who asked for digital</span>
+          <span class="j__tag">PROCESS</span>
+          <span class="j__date">21 JUL 2026</span>
+          <span class="j__thumb"><img src="./assets/img/arc-02.jpg" alt="" loading="lazy"></span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ───────────────────────────────────────────────── -->
+<footer class="ftr" id="contact">
+  <div class="ftr__top">
+    <p class="eyebrow">08 — CONTACT</p>
+    <button class="ftr__cta" type="button" data-open-drawer data-cursor="START">
+      <span>Let’s make</span>
+      <span>something that</span>
+      <span>outlives <em>the feed.</em></span>
+    </button>
+  </div>
+
+  <div class="ftr__grid">
+    <div class="ftr__col">
+      <h3>ENQUIRIES</h3>
+      <a href="mailto:studio@kronosatelier.com">studio@kronosatelier.com</a>
+      <a href="tel:+351210000000">+351 21 000 0000</a>
+    </div>
+    <div class="ftr__col">
+      <h3>ELSEWHERE</h3>
+      <a href="#contact">Instagram</a>
+      <a href="#contact">LinkedIn</a>
+      <a href="#contact">Behance</a>
+    </div>
+    <div class="ftr__col">
+      <h3>STUDIOS</h3>
+      <p>Rua da Boavista 84<br>1200-068 Lisboa, PT</p>
+      <p>Via Tortona 27<br>20144 Milano, IT</p>
+    </div>
+    <div class="ftr__col ftr__col--right">
+      <h3>LOCAL TIME</h3>
+      <p class="ftr__time" id="footTime">—</p>
+      <p class="ftr__tiny" id="footAvail">BOOKING Q1 2027 · 2 SLOTS</p>
+    </div>
+  </div>
+
+  <div class="ftr__base">
+    <span>© 2026 KRONOS ATELIER — ALL RIGHTS RESERVED</span>
+    <span class="ftr__base-mid">A DEMO BUILD · PHOTOGRAPHY FROM UNSPLASH</span>
+    <button class="ftr__theme" type="button" id="themeBtnFoot">SWITCH TO DAYLIGHT</button>
+    <a href="#top" class="ftr__top-link" data-cursor="TOP">BACK TO TOP ↑</a>
+  </div>
+</footer>
+
+<!-- ── ENQUIRY DRAWER ───────────────────────────────────────── -->
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Commission enquiry">
+  <div class="drawer__scrim" data-close-drawer></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="drawer__top">
+      <span class="drawer__tag">COMMISSION ENQUIRY — 2027</span>
+      <button class="drawer__close" type="button" data-close-drawer aria-label="Close enquiry">CLOSE ✕</button>
+    </div>
+
+    <form class="drawer__form" id="enquiryForm" novalidate>
+      <h2 class="drawer__title" id="drawerTitle">Tell me what<br>you’re <em>making.</em></h2>
+
+      <div class="field">
+        <label for="f-name">NAME</label>
+        <input id="f-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-email">EMAIL</label>
+        <input id="f-email" name="email" type="email" placeholder="you@studio.com" autocomplete="email" required>
+      </div>
+
+      <fieldset class="field field--chips">
+        <legend>WHAT IS IT</legend>
+        <div class="chips" data-group="type">
+          <button type="button" class="chip" data-val="Fashion / Editorial">FASHION</button>
+          <button type="button" class="chip" data-val="Portrait">PORTRAIT</button>
+          <button type="button" class="chip" data-val="Commercial">COMMERCIAL</button>
+          <button type="button" class="chip" data-val="Architecture">ARCHITECTURE</button>
+          <button type="button" class="chip" data-val="Wedding">WEDDING</button>
+          <button type="button" class="chip" data-val="Motion">MOTION</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="field field--chips">
+        <legend>BUDGET RANGE</legend>
+        <div class="chips" data-group="budget">
+          <button type="button" class="chip" data-val="€2—5k">€2—5K</button>
+          <button type="button" class="chip" data-val="€5—10k">€5—10K</button>
+          <button type="button" class="chip" data-val="€10—25k">€10—25K</button>
+          <button type="button" class="chip" data-val="€25k +">€25K +</button>
+        </div>
+      </fieldset>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-date">WHEN</label>
+          <input id="f-date" name="date" type="text" placeholder="March 2027">
+        </div>
+        <div class="field">
+          <label for="f-where">WHERE</label>
+          <input id="f-where" name="where" type="text" placeholder="Lisbon / remote">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-msg">THE SHORT VERSION</label>
+        <textarea id="f-msg" name="message" rows="3" placeholder="A few lines is plenty."></textarea>
+      </div>
+
+      <button class="btn btn--wide" type="submit" data-cursor="SEND">
+        <span>SEND ENQUIRY</span><i>→</i>
+      </button>
+      <p class="drawer__note">Replies within 48 h. Demo form — nothing is transmitted.</p>
+    </form>
+
+    <div class="drawer__done" id="drawerDone" hidden>
+      <p class="eyebrow">RECEIVED</p>
+      <h2>Thank you.<br>I’ll come back to you<br><em>within two days.</em></h2>
+      <p class="drawer__note">This is a demonstration build — no data was sent anywhere.</p>
+      <button class="btn btn--ghost" type="button" data-close-drawer>CLOSE</button>
+    </div>
+  </div>
+</aside>
+
+<!-- ── LIGHTBOX ─────────────────────────────────────────────── -->
+<div class="lb" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lb__bar">
+    <span class="lb__idx" id="lbIdx">001 / 014</span>
+    <span class="lb__title" id="lbTitle">—</span>
+    <button class="lb__close" id="lbClose" type="button" aria-label="Close viewer">CLOSE ✕</button>
+  </div>
+  <div class="lb__stage">
+    <button class="lb__nav lb__nav--prev" id="lbPrev" type="button" aria-label="Previous image">←</button>
+    <figure class="lb__figure">
+      <img id="lbImg" src="./assets/img/look-02.jpg" alt="">
+    </figure>
+    <button class="lb__nav lb__nav--next" id="lbNext" type="button" aria-label="Next image">→</button>
+  </div>
+  <div class="lb__meta">
+    <div><span>CLIENT</span><b id="lbClient">—</b></div>
+    <div><span>YEAR</span><b id="lbYear">—</b></div>
+    <div><span>CAPTURE</span><b id="lbExif">—</b></div>
+    <div><span>DISCIPLINE</span><b id="lbGenre">—</b></div>
+  </div>
+</div>
+
+<noscript>
+  <style>
+    .loader{display:none}
+    .cursor{display:none}
+    .hero__pin{position:relative;height:100vh}
+  </style>
+</noscript>
+
+<script src="./assets/js/vendor/gsap.min.js"></script>
+<script src="./assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="./assets/js/vendor/lenis.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
